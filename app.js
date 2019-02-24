@@ -41,6 +41,10 @@ function lose(userChoice, computerChoice) {
 }
 
 function draw(userChoice, computerChoice) {
+  computerScore_span.innerHTML = computerScore;
+  userScore_span.innerHTML = userScore;
+  result_p.innerHTML = "It's a draw!"; 
+
 
 }
 
