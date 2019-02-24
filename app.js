@@ -33,7 +33,7 @@ function win(userChoice, computerChoice) {
 }
 
 function lose(userChoice, computerChoice) {
-  computerChoice++;
+  computerScore++;
   computerScore_span.innerHTML = computerScore;
   userScore_span.innerHTML = userScore;
   result_p.innerHTML = convertToWord(computerChoice) + " beats " +
@@ -43,7 +43,7 @@ function lose(userChoice, computerChoice) {
 function draw(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   userScore_span.innerHTML = userScore;
-  result_p.innerHTML = "It's a draw!"; 
+  result_p.innerHTML = "It's a draw!";
 
 
 }
@@ -67,14 +67,14 @@ function game(userChoice) {
       case "rockpaper":
       case "paperscissors":
       case "scissorsrock":
-      //lose(userChoice, computerChoice);
+      lose(userChoice, computerChoice);
     break;
 
     //cases where there is a draw
       case "rockrock":
       case "scissorsscissors":
       case "paperpaper":
-    //  draw(userChoice, computerChoice);
+      draw(userChoice, computerChoice);
     break;
 
   }
