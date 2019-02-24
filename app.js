@@ -33,6 +33,11 @@ function win(userChoice, computerChoice) {
 }
 
 function lose(userChoice, computerChoice) {
+  computerChoice++;
+  computerScore_span.innerHTML = computerScore;
+  userScore_span.innerHTML = userScore;
+  result_p.innerHTML = convertToWord(computerChoice) + " beats " +
+    convertToWord(userChoice) + ". You lose....";
 }
 
 function draw(userChoice, computerChoice) {
