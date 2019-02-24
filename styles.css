@@ -81,7 +81,7 @@ header > h1 {
 
 .choice:hover {
   cursor: pointer;
-  background-color: #E2584D;
+  background-color: #9b9da0;
 }
 
 #action-message {
@@ -90,4 +90,21 @@ header > h1 {
   font-family: 'Asap', sans-serif;
   font-weight: bold;
   font-size: 20px;
+}
+
+.green-glow {
+  border: 4px solid #4dcc7d;
+  box-shadow: 0 0 10px #31b43a;
+
+}
+
+.red-glow {
+  border: 4px solid #fc121b;
+  box-shadow: 0 0 10px #d01115;
+
+}
+
+.gray-glow {
+  border: 4px solid #464647;
+  box-shadow: 0 0 10px #25292b;
 }
